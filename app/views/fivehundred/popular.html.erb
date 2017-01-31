@@ -1,15 +1,6 @@
-<p>By Ariane Deschenes Foucher</p>
-<h1 class="change-me">500px most popular pictures</h1>
-
-<div class="page-title">
-
-    <%= image_tag("cover-photo.png", id:"cover-photo") %>
-
-</div>
-<h1 class="so-popular">Popular photos</h1>
-<div class="popular">
+<div class="popular-container">
   <% @photos.each do |photo| %>
-    <span class="photo">
+    <span class="popular-photo" data-action="zoom">
       <%= image_tag photo.image_url %>
     </span>
   <% end %>

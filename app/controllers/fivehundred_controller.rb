@@ -1,6 +1,4 @@
 class FivehundredController < ApplicationController
-
-
   def popular
     @photos = photos_from_json(F00px.popular(rpp: 100, image_size: 600).body)
   end
