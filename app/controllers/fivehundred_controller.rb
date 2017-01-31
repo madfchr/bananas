@@ -1,10 +1,5 @@
 class FivehundredController < ApplicationController
-  def initialize
-    F00px.configure do |config|
-    config.consumer_key = KEY HERE
-    config.consumer_secret = SECRET HERE
-    end
-  end
+
 
   def popular
     @photos = photos_from_json(F00px.popular(rpp: 100, image_size: 600).body)
