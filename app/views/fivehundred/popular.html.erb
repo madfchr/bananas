@@ -1,2 +1,16 @@
 <h1 class="change-me">Fivehundred#popular</h1>
 <p>Find me in app/views/fivehundred/popular.html.erb</p>
+
+<div class="page-title">
+
+    <%= image_tag("cover-photo.png", id:"cover-photo") %>
+
+</div>
+<h1 class="so-popular">Popular photos</h1>
+<div class="popular">
+  <% @photos.each do |photo| %>
+    <span class="photo">
+      <%= image_tag photo.image_url %>
+    </span>
+  <% end %>
+</div>

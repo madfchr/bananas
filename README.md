@@ -1,28 +1,13 @@
-== README
+Welcome!
+This app dynamically displays the 100 most popular pictures from the 500px API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get started :
 
-Things you may want to cover:
+- Clone this repo
+- Open app/controllers/photos_controller.rb and enter your consumer_key and consumer_secret on lines 4 and 5.
+- Run bundle install
+- Run rails s
+- The app is now fired up on localhost:3000
+- Have fun!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Ariane
